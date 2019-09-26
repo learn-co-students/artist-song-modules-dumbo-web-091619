@@ -8,9 +8,9 @@ module Memorable
     self.all.count
   end 
 
-  def find_by_name(name)
-    self.all.find {|song| song.name == name}
-  end
+  # def find_by_name(name)
+  #   self.all.find {|song| song.name == name}
+  # end
 
 end
   module InstanceMethods
@@ -18,8 +18,8 @@ end
       self.class.all << self
     end
     
-    def to_param
-      name.downcase.gsub(' ', '-')
-    end
+    # def to_param
+    #   name.downcase.gsub(' ', '-')
+    # end
   end
 end
